@@ -1,0 +1,168 @@
+a
+{
+	color: #DD4F24;
+}
+
+body
+{
+	background:#FFFFFF;
+	color: #4c4c4c;
+	font-family: "Open Sans", Arial;
+	font-size: 16px;
+	margin: 0;
+}
+
+header
+{
+	border: 1px black solid;
+	background:#5C604D;
+	color:#FFF0AA;
+	margin: 0;
+	padding: 0.5em;
+}
+
+header h1
+{
+	font-size: 20px;
+	font-weight: normal;
+	margin: 1em 0 0 1em;
+	width: 60%; /*EL TITULO DE LA PAGINA SOLO UTILIZA EL 60% A LO ANCHO*/
+}
+
+header figure, header h1
+{
+	display: inline-block;
+	margin: 1em 1em 0 0;
+	vertical-align: top;
+}
+
+header #avatar
+{
+
+	float: rigth; /*EL AVATAR FLOTA A LA DERECHA Y NO PIERDE SU PROPIEDAD DE INLINE-BLOCK*/
+
+}
+
+header #avatar figcaption
+{
+	background:#FFF0AA;
+	float: right;
+	height: 50px; /*SE LE DIO EL MISMO LARGO DE LA IMG DEL AVATAR PARA QUE ASI SE AJUSTE LA CAJA.*/
+	padding: 0 2px; 
+}
+
+header #avatar img
+{
+	float: left;
+	width: 50px;
+}
+
+
+header #logo img
+{
+	width: 80px;
+}
+
+nav
+{
+	background: #A3AE7E;
+	font-size: 0.9em;
+
+}
+
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li
+
+{
+	display: inline-block;
+	margin: 0 1em 0 0;
+	vertical-align: top;
+}
+
+nav ul li a
+{
+	color:#5C604D;
+	display: block;
+	padding: 0.5em 0;
+}
+
+nav #flechita_nav a
+{
+	background: #DD4F24;
+	color: white;
+	padding: 0.5em 0.5em;
+	text-decoration: none;
+
+}
+
+nav #publicar_nav
+{
+	float: right;
+	margin-right: 0;
+}
+
+nav #publicar_nav a
+{
+	background: #FFF0AA;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+#contenido
+{
+	margin:1em;
+}
+
+#contenido .item
+{
+	background: white;
+	border-bottom: 3px #DD4F24 solid;
+}
+
+#contenido .item p
+{
+	color: #7A7A7A;
+	font-size:0.9em;
+
+}
+
+#contenido .item .datos_item .tag_item
+{
+	background: #DD4F24;
+	border-radius: 0.5em;
+	color: white;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+
+}
+
+#contenido .item .imagen_item
+{
+	float: left;
+	margin: 0 1em 0 0;
+
+}
+
+#contenido .item .imagen_item img
+{
+	width: 96px;
+}
+
+#contenido .item .titulo_item
+{
+	font-size: 1em;
+	font-style: italic;
+	padding: 0.5em 0.5em 0;
+}
+
+#contenido .item .titulo_item a
+{
+	color: #444;
+	text-decoration: none;
+}

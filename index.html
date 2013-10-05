@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset = "utf-8"/>
+	<title>TITULO DE LA PÁGINA.</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<header> <!--ENCABEZADO DE LA PAGINA-->
+		<figure id = "logo"> <!--CONTENEDOR DE LA IMG DEL ENCABEZADO DE LA PAGINA (LOGO)-->
+			<img src="logo.png"><!--RUTA IMG (LOGO)-->
+		</figure>
+		<h1 id="titulo_header">PULS3: Comunidad de gente cool, atractiva y millonaria.</h1>
+		<figure id="avatar"> 
+			<img src="avatar.jpg"> <!--RUTA IMG (AVATAR)-->
+			<figcaption> <!--FLECHA AL LADO DE AVATAR-->
+				*
+			</figcaption>
+		</figure>
+	</header>
+	<nav> <!--BARRA DE NAVEGACIÓN-->
+		<ul>
+			<li id="flechita_nav"><a href="#">*</a></li>
+			<li><a href="#">Python</a></li>
+			<li><a href="#">HTML5</a></li>
+			<li><a href="#">Javascript</a></li>
+			<li><a href="#">CSS3</a></li>
+			<li><a href="#">Django</a></li>
+			<li id="publicar_nav"><a href="#">Publicar</a></li>
+		</ul>
+	</nav>	
+	<section id="contenido">
+		<article class="item">
+			<figure class= "imagen_item">
+				<img src="imagen.jpg"><!--IMG DEL ARTICULO-->
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Una mirada a Leap Motion: El control Minority Report.</a> <!-- ETIQUETA a PERMITE QUE SE DIRIJA AL LUGAR DEL POST-->
+			</h2>
+			<p class="autor_item">
+				POR <a href="#">Keyla Sagredo T.</a> <!--REFERENCIA AL AUTOR DEL POST--> 
+			</p>
+			<p class="datos_item">
+				<a  class="tag_item" href="#">Categoria</a>
+				<span class="fecha_item">Hace <strong>5</strong> min.</span>
+				<a class="comentario_item" href="#">455</a>
+				<a class="guardar_item" href="#">*</a>
+			</p>	
+			<p class="votacion">
+				<a class="up" href="#">UP</a>
+				3141
+				<a class="down" href="#">DOWN</a>
+			</p>
+		</article>	
+	</section>
+	<footer>
+		<p><strong>DESING Keyla Sagredo T.</strong></p><!--STRONG PERMITE QUE SE VEA LA FUENTE NEGRITA-->
+	</footer>
+</body>
+</html>
