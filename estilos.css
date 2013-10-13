@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a
 {
 	color: #DD4F24;
@@ -41,14 +52,24 @@ header #avatar
 
 	float: rigth; /*EL AVATAR FLOTA A LA DERECHA Y NO PIERDE SU PROPIEDAD DE INLINE-BLOCK*/
 
+
 }
 
 header #avatar figcaption
 {
+
 	background:#FFF0AA;
 	float: right;
 	height: 50px; /*SE LE DIO EL MISMO LARGO DE LA IMG DEL AVATAR PARA QUE ASI SE AJUSTE LA CAJA.*/
-	padding: 0 2px; 
+	line-height: 50px;
+}
+
+header #avatar figcaption:after
+{
+	color: #5C604D;
+	content: "\e001";
+	font-family: "icomoon";
+	opacity: 0.8;
 }
 
 header #avatar img
@@ -101,15 +122,38 @@ nav #flechita_nav a
 
 }
 
+nav #flechita_nav a:after
+{
+	content: "\e003";
+	font-family: "icomoon";
+	opacity:0.8;
+}
+
 nav #publicar_nav
 {
+	background: #FFF0AA;
 	float: right;
 	margin-right: 0;
+	padding-right: 1em;
+	position: relative;
+}
+
+nav #publicar_nav:after
+{
+	color:#5C604D;
+	content: "\e000";
+	font-family: "icomoon";
+	font-size: 1.4em;
+	opacity: 0.8;
+	position: absolute;
+	right: 0;
+	top: 0.5;
 }
 
 nav #publicar_nav a
 {
 	background: #FFF0AA;
+	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
@@ -179,5 +223,30 @@ nav #publicar_nav a
 	padding: 0.5em 0;
 	position: absolute;
 	text-align: center;
+	top: 100%;
 	width: 96px;
+}
+
+#contenido .item .votacion a
+{
+
+	text-decoration: none;
+}
+
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+#contenido .item .votacion .down:after
+{
+	color: red;
+	content: "\e001";
+}
+#contenido .item .votacion .up:after
+{
+	color: green;
+	content: "\e002";
 }
